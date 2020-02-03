@@ -1,3 +1,8 @@
-h1 {
-  color: red;
-}
+// Импорт глобальных файлов
+@import "global/normalize.scss";
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
+
+// Импорт компонентов
+@import "components/header.scss";
