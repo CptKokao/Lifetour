@@ -1,0 +1,31 @@
+.logo {
+  min-width: 205px;
+  position: relative;
+
+  a {
+    color: #ffffff;
+  }
+
+  h2 {
+    font-style: italic;
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 28px;
+    text-transform: uppercase;
+    padding-left: 80px;
+  }
+
+  p {
+    font-size: 8px;
+    line-height: 10px;
+    padding-left: 80px;
+  }
+}
+
+.logo__img {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 62px;
+  height: 62px;
+}
