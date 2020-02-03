@@ -2,9 +2,10 @@
   width: 1440px;
   min-height: 779px;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 52px;
   background: #1570c5 url("../img/header-bg.jpg") center no-repeat;
   background-size: cover;
+  color: #FFFFFF;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background: #1570c5 url("../img/header-bg@2x.jpg") center no-repeat;
@@ -23,10 +24,13 @@
 .header__wrapper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header__nav {
-  margin-left: 85px;
+  min-width: 658px;
+  margin-right: 20px;
+  margin-left: 10px;
 }
 
 .header__list {
@@ -42,7 +46,41 @@
 
   a {
     color: #ffffff;
+    letter-spacing: 1.5px;
   }
+}
+
+.header__wrapper-title {
+  position: relative;
+}
+
+.header__title {
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 55px;
+  margin-top: 190px;
+  letter-spacing: -0.5px;
+}
+
+.header__shadow {
+  position: absolute;
+  top: -45px;
+  left: 0;
+
+  font-weight: 900;
+  font-size: 93px;
+  line-height: 113px;
+  text-transform: uppercase;
+  color: #F5F9FC;
+  opacity: 0.2;
+}
+
+.header__desc {
+  font-size: 19px;
+  line-height: 28px;
+  max-width: 468px;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
 }
 
 .header__tel {
@@ -51,12 +89,18 @@
   font-size: 19px;
 }
 
+.header__btn {
+  margin-top: 40px;
+}
 
 // Лого
 .logo {
   min-width: 205px;
   position: relative;
-  color: #ffffff;
+
+  a {
+    color: #ffffff;
+  }
 
   h2 {
     font-style: italic;
@@ -81,3 +125,35 @@
   width: 62px;
   height: 62px;
 }
+
+
+// Социальные сети
+.social {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 90px;
+}
+
+.social__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 98px;
+
+  li {
+    width: 21.3px;
+    height: 21.3px;
+
+    background: rgba(2, 102, 193, 0.5);
+  }
+
+  a {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+

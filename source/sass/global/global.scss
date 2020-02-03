@@ -57,9 +57,9 @@ a {
 
 .container {
   max-width: 1226px;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
 
   @media (max-width: $tablet-width) {
     max-width: 576px;
@@ -82,4 +82,18 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.btn {
+  width: 246px;
+  height: 64px;
+  background: #0266c1;
+
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
