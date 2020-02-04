@@ -56,13 +56,16 @@ a {
 }
 
 .container {
-  max-width: 1226px;
+  max-width: 1440px;
+  padding-left: 8.5%;
+  padding-right: 7%;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  outline: 1px solid pink;
+
 
   @media (max-width: $tablet-width) {
-    max-width: 576px;
+    padding-left: 14.7%;
+
   }
 
   @media (max-width: $mobile-width) {
@@ -96,4 +99,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: $tablet-width) {
+    width: 191px;
+    height: 47px;
+
+    font-size: 14px;
+    letter-spacing: 1.3px;
+  }
 }

@@ -90,15 +90,28 @@
       <div class="header__wrapper">
 
         <!-- Лого -->
-        <div class="logo">
-          <a href="#">
-            <div class="logo__img">
-              <img src="./img/icon-logo.svg" width="62" height="62" alt="lifetour">
-            </div>
-            <h2>lifetour</h2>
-            <p>Организация походов в горы</p>
-          </a>
+        <div class="header__logo">
+          <div class="logo">
+            <a href="#">
+              <div class="logo__img">
+                <img src="./img/icon-logo.svg" alt="lifetour">
+              </div>
+              <h2>lifetour</h2>
+              <p>Организация походов в горы</p>
+            </a>
+          </div>
         </div>
+
+
+        <!-- Гамбургер -->
+        <div class="header__hamburger">
+          <div class="hamburger" id="hamburger-6">
+            <span class="line"></span>
+            <span class="line" id="line-new"></span>
+            <span class="line"></span>
+          </div>
+        </div>
+
 
         <!-- Навигация -->
         <nav class="header__nav">
@@ -126,7 +139,7 @@
       <a class="btn header__btn" href="#">Выбрать экскурсию</a>
 
       <!-- Социальные сети -->
-      <div class="social header__social">
+      <div class="header__social social">
         <ul class="social__list">
           <li class="">
             <a href="#" class="">
@@ -147,5 +160,8 @@
       </div>
     </div>
   </header>
+
+  <script src="./js/jqeury.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>

@@ -1,5 +1,4 @@
 .logo {
-  min-width: 205px;
   position: relative;
 
   a {
@@ -13,12 +12,34 @@
     line-height: 28px;
     text-transform: uppercase;
     padding-left: 80px;
+
+    @media (max-width: $tablet-width) {
+      padding-left: 0;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @media (max-width: $mobile-width) {
+      font-size: 12px;
+      line-height: 15px;
+    }
   }
 
   p {
     font-size: 8px;
     line-height: 10px;
     padding-left: 80px;
+
+    @media (max-width: $tablet-width) {
+      padding-left: 0;
+      font-size: 6px;
+      line-height: 7px;
+    }
+
+    @media (max-width: $mobile-width) {
+      font-size: 5px;
+      line-height: 5px;
+    }
   }
 }
 
@@ -28,4 +49,18 @@
   left: 0;
   width: 62px;
   height: 62px;
+
+  @media (max-width: $tablet-width) {
+    top: -10px;
+    left: -50px;
+    width: 36px;
+    height: 36px;
+  }
+
+  @media (max-width: $mobile-width) {
+    top: -10px;
+    left: -40px;
+    width: 30px;
+    height: 30px;
+  }
 }
