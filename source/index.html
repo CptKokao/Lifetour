@@ -7,7 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Lifetour</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
@@ -95,23 +94,66 @@
 
   <main>
     <div class="container">
-      <!-- Swiper -->
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          <div class="swiper-slide">Slide 4</div>
-          <div class="swiper-slide">Slide 5</div>
-          <div class="swiper-slide">Slide 6</div>
-          <div class="swiper-slide">Slide 7</div>
-          <div class="swiper-slide">Slide 8</div>
-          <div class="swiper-slide">Slide 9</div>
-          <div class="swiper-slide">Slide 10</div>
+      <div class="tour">
+        <h2 class="tour__title">Ближайшие туры</h2>
+        <!-- Swiper -->
+        <div class="tour__swiper-container swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="" class="">
+                <div class="tour__wrapper">
+                  <div class="tour__img">
+                    <img src="./img/elbrus.jpg" alt="Эльбрус">
+                  </div>
+
+                  <div class="tour__desc">
+                    <p class="tour__desc-location">
+                      <svg width="19" height="12">
+                        <use xlink:href="#icon-location"/>
+                      </svg>
+                      Кавказ
+                    </p>
+                    <p class="tour__desc-day">
+                      <svg width="22" height="22">
+                        <use xlink:href="#icon-sun"/>
+                      </svg>
+                      4 дня
+                    </p>
+                    <p class="tour__desc-night">
+                      <svg width="20" height="20">
+                        <use xlink:href="#icon-moon"/>
+                      </svg>
+                      3 ночи
+                    </p>
+                  </div>
+
+                  <h3 class="tour__caption">Путешествие вокруг Эльбруса</h3>
+
+                  <div class="tour__info">
+                    <div class="tour__info-rating">
+                      <p>Сложность:</p>
+                      <svg width="79" height="14">
+                        <use xlink:href="#icon-rating-3"/>
+                      </svg>
+                    </div>
+                    <div class="tour__info-date">
+                      <p>Дата набора:</p>
+                      <span>12.06-19.06</span>
+                    </div>
+                    <div class="tour__info-group">
+                      <p>Группа:</p>
+                      <span>до 15 чел.</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
       </div>
     </div>
   </main>

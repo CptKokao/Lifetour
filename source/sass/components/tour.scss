@@ -1,0 +1,118 @@
+.tour {
+  position: relative;
+  background: url("../img/cloud.png") center no-repeat;
+}
+
+.tour__title {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 43px;
+  color: #2D383F;
+}
+
+.tour__swiper-container {
+  padding-top: 165px;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+// карточка
+.tour__wrapper {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 55%;
+}
+
+.tour__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.tour__desc {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  color: $white;
+}
+
+.tour__desc-day {
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+
+  svg {
+    margin-right: 6px;
+  }
+}
+
+.tour__desc-night {
+  display: flex;
+  align-items: center;
+  margin-left: 11%;
+
+  svg {
+    margin-right: 6px;
+  }
+}
+
+.tour__desc-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  line-height: 17px;
+
+  min-width: 115px;
+  height: 29px;
+  background-color: $blue;
+}
+
+.tour__caption {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  width: 242px;
+  color: $white;
+  letter-spacing: 1.5px;
+  margin-top: 25px;
+}
+
+.tour__info {
+  position: relative;
+  display: flex;
+  margin-top: 10%;
+  color: $white;
+
+  p {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  span {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 21px;
+  }
+}
+
+.tour__info-date {
+  margin-left: 14%;
+}
+
+.tour__info-group {
+  margin-left: 17%;
+}

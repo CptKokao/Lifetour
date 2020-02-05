@@ -1,8 +1,40 @@
-.swiper-container {
-  width: 100%;
-  height: 412px;
+.swiper-button-next,
+.swiper-button-prev {
+  top: 17%;
+
+  width: 35px;
+  height: 35px;
+  background-color: $blue;
+
+  &::after {
+    content: "";
+    width: 14px;
+    height: 8px;
+  }
+}
+
+.swiper-button-next {
+  right: 0;
+
+  &::after {
+    background: url("../img/icon-next.svg") center no-repeat;
+  }
+}
+
+.swiper-button-prev {
+  right: 40px;
+  left: auto;
+
+  &::after {
+    background: url("../img/icon-prev.svg") center no-repeat;
+  }
 }
 
 .swiper-slide {
-  background-color: pink;
+  height: 412px;
+
+  @media (max-width: $mobile-width) {
+    width: 281px;
+
+  }
 }
