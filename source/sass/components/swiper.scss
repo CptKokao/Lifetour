@@ -11,6 +11,10 @@
     width: 14px;
     height: 8px;
   }
+
+  @media (max-width: $mobile-width) {
+    top: 15%;
+  }
 }
 
 .swiper-button-next {
@@ -19,14 +23,30 @@
   &::after {
     background: url("../img/icon-next.svg") center no-repeat;
   }
+
+  @media (max-width: $tablet-width) {
+    right: 15%;
+  }
+
+  @media (max-width: $mobile-width) {
+    right: 7%;
+  }
 }
 
 .swiper-button-prev {
-  right: 40px;
+  right: 4%;
   left: auto;
 
   &::after {
     background: url("../img/icon-prev.svg") center no-repeat;
+  }
+
+  @media (max-width: $tablet-width) {
+    right: 21%;
+  }
+
+  @media (max-width: $mobile-width) {
+
   }
 }
 

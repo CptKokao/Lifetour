@@ -29,6 +29,9 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 h1,
@@ -55,17 +58,21 @@ a {
   color: #000000;
 }
 
+.container-fluid {
+  width: 100%;
+}
+
 .container {
+  //  1196 + 20*2 = 1236
   max-width: 1236px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
   outline: 1px solid pink;
 
-
   @media (max-width: $tablet-width) {
     padding-left: 110px;
-    padding-right: 0;
+    padding-right: 110px;
   }
 
   @media (max-width: $mobile-width) {
@@ -74,9 +81,9 @@ a {
   }
 }
 
-.container--padding-right {
+.container--nopadding-right {
   @media (max-width: $tablet-width) {
-    padding-right: 110px;
+    padding-right: 0;
   }
 }
 
