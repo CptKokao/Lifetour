@@ -1,15 +1,17 @@
 .header {
-  width: 100%;
+  max-width: 1440px;
   min-height: 779px;
   padding-top: 52px;
-  background: #1570c5 url("../img/header-bg.jpg") center no-repeat;
-  background-size: cover;
+  background: url("../img/cloud.png") left bottom no-repeat,
+  #1570c5 url("../img/header-bg.jpg") no-repeat;
+
+  background-size: auto, cover;
   color: #ffffff;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: #1570c5 url("../img/header-bg@2x.jpg") center no-repeat;
-    background-size: cover;
-  }
+  // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  //   background: #1570c5 url("../img/header-bg@2x.jpg") center no-repeat;
+  //   background-size: cover;
+  // }
 
   @media (max-width: $tablet-width) {
     min-height: 628px;
@@ -30,13 +32,13 @@
   position: relative;
 
   @media (max-width: $tablet-width) {
-    align-items: center;
+    justify-content: space-around;
 
   }
 
-  @media (max-width: $mobile-width) {
-    justify-content: space-between;
-  }
+  // @media (max-width: $mobile-width) {
+  //   justify-content: space-between;
+  // }
 }
 
 .header__logo {
