@@ -25,16 +25,16 @@
   }
 
   @media (max-width: $tablet-width) {
-    right: 15%;
+    right: 80px;
   }
 
   @media (max-width: $mobile-width) {
-    right: 7%;
+    right: 20px;
   }
 }
 
 .swiper-button-prev {
-  right: 4%;
+  right: 40px;
   left: auto;
 
   &::after {
@@ -42,11 +42,11 @@
   }
 
   @media (max-width: $tablet-width) {
-    right: 21%;
+    right: 120px;
   }
 
   @media (max-width: $mobile-width) {
-
+    right: 60px;
   }
 }
 
@@ -55,6 +55,5 @@
 
   @media (max-width: $mobile-width) {
     width: 281px;
-
   }
 }
