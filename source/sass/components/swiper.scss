@@ -21,7 +21,7 @@
   right: 0;
 
   &::after {
-    background: url("../img/icon-next.svg") center no-repeat;
+    background: url("../img/btn-next.svg") center no-repeat;
   }
 
   @media (max-width: $tablet-width) {
@@ -38,7 +38,7 @@
   left: auto;
 
   &::after {
-    background: url("../img/icon-prev.svg") center no-repeat;
+    background: url("../img/btn-prev.svg") center no-repeat;
   }
 
   @media (max-width: $tablet-width) {
