@@ -66,10 +66,6 @@
   @media (max-width: $tablet-width) {
     justify-content: space-between;
   }
-
-  // @media (max-width: $mobile-width) {
-  //   justify-content: space-between;
-  // }
 }
 
 .header__logo {
@@ -237,6 +233,10 @@
 
 .header__social {
   margin-top: 90px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 75px;
+  }
 
   @media (max-width: $mobile-width) {
     display: none;

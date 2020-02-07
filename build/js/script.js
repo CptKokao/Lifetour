@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 // Swiper
 var swiper = new Swiper(".swiper-container", {
-
+  loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
@@ -19,7 +19,6 @@ var swiper = new Swiper(".swiper-container", {
     320: {
       width: 600,
       slidesPerView: 2,
-      // spaceBetween: 10
     },
     767: {
       width: 1196,
