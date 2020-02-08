@@ -1,0 +1,144 @@
+.training {
+  position: relative;
+  margin-top: 85px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 115px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 85px;
+  }
+
+  h2 {
+    @include title();
+  }
+
+  h3 {
+    position: absolute;
+    top: 180px;
+    left: 0;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    color: #2d383f;
+    letter-spacing: 1.3px;
+
+    @media (max-width: $tablet-width) {
+      top: 225px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    @media (max-width: $mobile-width) {
+      top: 260px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+
+.training__title-shadow {
+  @include title-shadow();
+
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
+
+.training__decs {
+  width: 825px;
+  margin-top: 30px;
+
+  line-height: 26px;
+  letter-spacing: 1.3px;
+
+  @media (max-width: $tablet-width) {
+    width: 480px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 20px;
+    width: 281px;
+
+    font-size: 14px;
+    line-height: 23px;
+  }
+}
+
+.training__swiper-container {
+  padding-top: 115px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 125px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 110px;
+  }
+}
+
+.training_swiper-slide {
+  width: 234px;
+  min-height: 386px;
+  padding: 15px 14px;
+
+
+  background: #FFFFFF;
+  // opacity: 0.09;
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.training__inner {
+  position: relative;
+}
+
+.training__coach {
+  width: 87px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #000000;
+}
+
+.training__coach-about {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+}
+
+.training__coach-social {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #9AC2E6;
+
+  svg {
+    stroke: #000000;
+  }
+}
+
+.training__swiper-button-next,
+.training__swiper-button-prev {
+  top: 14%;
+
+  @media (max-width: $tablet-width) {
+    top: 16%;
+  }
+
+  @media (max-width: $tablet-width) {
+    top: 13%;
+  }
+}

@@ -3,6 +3,7 @@
 @import "global/variables.scss";
 @import "global/fonts.scss";
 @import "global/global.scss";
+@import "global/mixins.scss";
 
 // Импорт компонентов
 @import "components/hamburger.scss";
@@ -11,3 +12,4 @@
 @import "components/header.scss";
 @import "components/swiper.scss";
 @import "components/tour.scss";
+@import "components/training.scss";

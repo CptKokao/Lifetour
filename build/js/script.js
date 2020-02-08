@@ -8,7 +8,7 @@ $(document).ready(function() {
 });
 
 // Swiper
-var swiper = new Swiper(".swiper-container", {
+var swiper = new Swiper(".tour__swiper-container", {
   loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -26,4 +26,16 @@ var swiper = new Swiper(".swiper-container", {
       spaceBetween: 20
     }
   }
+});
+
+// Swiper
+var swiper = new Swiper(".training__swiper-container", {
+  width: 'auto',
+  slidesPerView: 5,
+  spaceBetween: 5,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
 });

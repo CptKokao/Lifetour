@@ -1,53 +1,41 @@
 .tour {
   position: relative;
   padding-bottom: 20px;
+
+  h2 {
+    @include title();
+
+    position: absolute;
+    top: 70px;
+    left: 0;
+
+    @media (max-width: $tablet-width) {
+      top: 80px;
+    }
+
+    @media (max-width: $mobile-width) {
+      top: 45px;
+    }
+  }
 }
 
 .tour__title-shadow {
+  @include title-shadow();
+
   position: absolute;
   top: 47px;
   left: 0;
-  font-weight: 800;
-  font-size: 55px;
-  line-height: 67px;
-  color: #2d383f;
-  opacity: 0.03;
 
   @media (max-width: $tablet-width) {
     top: 65px;
-    font-size: 40px;
-    line-height: 49px;
   }
 
   @media (max-width: $mobile-width) {
     top: 30px;
-    font-size: 30px;
-    line-height: 37px;
   }
 }
 
-.tour__title {
-  position: absolute;
-  top: 70px;
-  left: 0;
-  font-weight: 800;
-  font-size: 35px;
-  line-height: 43px;
-  color: #2d383f;
-
-  @media (max-width: $tablet-width) {
-    top: 80px;
-    font-size: 25px;
-    line-height: 30px;
-  }
-
-  @media (max-width: $mobile-width) {
-    top: 45px;
-    width: 156px;
-    font-size: 22px;
-    line-height: 27px;
-  }
-}
+// Стили для слайдера
 
 .tour__swiper-container {
   padding-top: 160px;
@@ -62,6 +50,10 @@
   @media (max-width: $mobile-width) {
     padding-top: 122px;
   }
+}
+
+.tour__swiper-slide {
+  min-height: 412px;
 }
 
 // карточка
