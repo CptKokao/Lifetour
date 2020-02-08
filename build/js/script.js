@@ -30,7 +30,7 @@ var swiper = new Swiper(".tour__swiper-container", {
 
 // Swiper
 var swiper = new Swiper(".training__swiper-container", {
-  width: 'auto',
+  width: 1196,
   slidesPerView: 5,
   spaceBetween: 5,
   loop: true,
