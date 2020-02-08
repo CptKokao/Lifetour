@@ -1,4 +1,9 @@
 .tour {
+  background: url("../img/bg.png") right no-repeat;
+  background-position-y: -10px;
+}
+
+.tour__box {
   position: relative;
   padding-bottom: 20px;
 
@@ -150,7 +155,7 @@
 .tour__info {
   position: relative;
   display: flex;
-  margin-top: 10%;
+  margin-top: 45px;
   color: $white;
 
   @media (max-width: $mobile-width) {
