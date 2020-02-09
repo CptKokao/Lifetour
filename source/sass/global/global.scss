@@ -90,6 +90,13 @@ a {
   }
 }
 
+.container--nopadding-left {
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+    outline: 1px solid green;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

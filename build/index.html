@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Lifetour. Профессионально организовываем экскурсии на самые красивые вершины страны ">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lifetour</title>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-  <link rel="stylesheet" href="./css/style.min.css">
-</head>
-<body>
-  <!-- подключение svg sprite -->
-  <div style="display:none">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lifetour. Профессионально организовываем экскурсии на самые красивые вершины страны ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lifetour</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+  </head>
+  <body>
+    <!-- подключение svg sprite -->
+    <div style="display:none">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
 <clipPath id="clip0">
 <rect width="25" height="25" fill="white"></rect>
 </clipPath>
@@ -83,440 +83,502 @@
 </g>
 
 </symbol></svg>
-  </div>
+    </div>
 
-  <!-- header -->
-  <header class="header container-fluid">
-    <div class="container">
-      <div class="header__wrapper">
-
-        <!-- Лого -->
-        <div class="header__logo">
-          <div class="logo">
-            <a href="#">
-              <div class="logo__img">
-                <img src="./img/logo.svg" alt="lifetour">
-              </div>
-              <h2>lifetour</h2>
-              <p>Организация походов в горы</p>
-            </a>
+    <!-- header -->
+    <header class="header container-fluid">
+      <div class="container">
+        <div class="header__wrapper">
+          <!-- Лого -->
+          <div class="header__logo">
+            <div class="logo">
+              <a href="#">
+                <div class="logo__img">
+                  <img src="./img/logo.svg" alt="lifetour">
+                </div>
+                <h2>lifetour</h2>
+                <p>Организация походов в горы</p>
+              </a>
+            </div>
           </div>
+
+          <!-- Гамбургер -->
+          <div class="header__hamburger">
+            <div class="hamburger" id="hamburger-6">
+              <span class="line"></span>
+              <span class="line" id="line-new"></span>
+              <span class="line"></span>
+            </div>
+          </div>
+
+          <!-- Навигация -->
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item"><a href="">Туры</a></li>
+              <li class="header__item"><a href="">Обучение</a></li>
+              <li class="header__item"><a href="">О нас</a></li>
+              <li class="header__item"><a href="">Отзывы</a></li>
+              <li class="header__item"><a href="">Фотографии</a></li>
+              <li class="header__item"><a href="">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <!-- Телефон -->
+          <a class="header__tel" href="tel:8 800 725 32 32">8 800 725 32 32</a>
         </div>
 
-        <!-- Гамбургер -->
-        <div class="header__hamburger">
-          <div class="hamburger" id="hamburger-6">
-            <span class="line"></span>
-            <span class="line" id="line-new"></span>
-            <span class="line"></span>
-          </div>
+        <!-- Блок заголовка -->
+        <div class="header__wrapper-title">
+          <h1 class="header__title">Походы в горы России</h1>
+          <p class="header__shadow">trekking</p>
         </div>
 
-        <!-- Навигация -->
-        <nav class="header__nav">
-          <ul class="header__list">
-            <li class="header__item"><a href="">Туры</a></li>
-            <li class="header__item"><a href="">Обучение</a></li>
-            <li class="header__item"><a href="">О нас</a></li>
-            <li class="header__item"><a href="">Отзывы</a></li>
-            <li class="header__item"><a href="">Фотографии</a></li>
-            <li class="header__item"><a href="">Контакты</a></li>
+        <p class="header__desc">
+          Профессионально организовываем экскурсии на самые красивые вершины
+          страны
+        </p>
+        <a class="btn header__btn" href="#">Выбрать экскурсию</a>
+
+        <!-- Социальные сети -->
+        <div class="header__social social">
+          <ul class="social__list">
+            <li class="">
+              <a href="#" class="">
+                <svg width="12" height="8">
+                  <use xlink:href="#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="">
+              <a href="#" class="">
+                <svg width="6" height="11">
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="">
+              <a href="#" class="">
+                <svg width="13" height="13">
+                  <use xlink:href="#icon-ig"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </nav>
-
-        <!-- Телефон -->
-        <a class="header__tel" href="tel:8 800 725 32 32">8 800 725 32 32</a>
+        </div>
       </div>
+    </header>
 
-      <!-- Блок заголовка -->
-      <div class="header__wrapper-title">
-        <h1 class="header__title">Походы в горы России</h1>
-        <p class="header__shadow">trekking</p>
-      </div>
+    <main>
+      <div class="container-fluid tour">
+        <!-- Tour -->
+        <div class="container container--nopadding-right">
+          <section class="tour__box">
+            <p class="tour__title-shadow">Ближайшие туры</p>
+            <h2>Ближайшие туры</h2>
 
-      <p class="header__desc">Профессионально организовываем экскурсии на самые красивые вершины страны </p>
-      <a class="btn header__btn" href="#">Выбрать экскурсию</a>
-
-      <!-- Социальные сети -->
-      <div class="header__social social">
-        <ul class="social__list">
-          <li class="">
-            <a href="#" class="">
-              <svg width="12" height="8">
-                <use xlink:href="#icon-vk"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="">
-            <a href="#" class="">
-              <svg width="6" height="11">
-                <use xlink:href="#icon-fb"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="">
-            <a href="#" class="">
-              <svg width="13" height="13">
-                <use xlink:href="#icon-ig"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <div class="container-fluid tour">
-      <!-- Tour -->
-      <div class="container container--nopadding-right">
-        <section class="tour__box">
-          <p class="tour__title-shadow">Ближайшие туры</p>
-          <h2>Ближайшие туры</h2>
-
-          <!-- Swiper -->
-          <div class="tour__swiper-container swiper-container">
-            <!-- Swiper-wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slide1 -->
-              <div class="swiper-slide tour__swiper-slide">
-                <a href="#" class="tour__wrapper">
-                  <div class="tour__img">
-                    <picture>
-                      <!-- <source media="(max-width: 767px)" srcset="./img/elbrus-mobile@2x.webp 2x, ./img/elbrus-mobile.webp 1x" type="image/webp"> -->
-                      <source media="(max-width: 767px)" srcset="./img/elbrus-mobile@2x.jpg 2x, ./img/elbrus-mobile.jpg 1x">
-                      <!-- <source srcset="./img/elbrus@2x.webp 2x, ./img/elbrus.webp 1x" type="image/webp"> -->
-                      <img src="./img/elbrus.jpg" srcset="./img/elbrus@2x.jpg 2x" alt="Эльбрус">
-                    </picture>
-                  </div>
-                  <div class="tour__desc">
-                    <p class="tour__desc-location">
-                      <svg width="19" height="12">
-                        <use xlink:href="#icon-location"></use>
-                      </svg>
-                      Кавказ
-                    </p>
-                    <p class="tour__desc-day">
-                      <svg width="22" height="22">
-                        <use xlink:href="#icon-sun"></use>
-                      </svg>
-                      4 дня
-                    </p>
-                    <p class="tour__desc-night">
-                      <svg width="20" height="20">
-                        <use xlink:href="#icon-moon"></use>
-                      </svg>
-                      3 ночи
-                    </p>
-                  </div>
-
-                  <h3 class="tour__caption">Путешествие вокруг Эльбруса</h3>
-
-                  <div class="tour__info">
-                    <div class="tour__line"></div>
-                    <div class="tour__info-rating">
-                      <p>Сложность:</p>
-                      <svg width="79" height="14">
-                        <use xlink:href="#icon-rating-3"></use>
-                      </svg>
+            <!-- Swiper -->
+            <div class="tour__swiper-container swiper-container">
+              <!-- Swiper-wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slide1 -->
+                <div class="swiper-slide tour__swiper-slide">
+                  <a href="#" class="tour__wrapper">
+                    <div class="tour__img">
+                      <picture>
+                        <!-- <source media="(max-width: 767px)" srcset="./img/elbrus-mobile@2x.webp 2x, ./img/elbrus-mobile.webp 1x" type="image/webp"> -->
+                        <source media="(max-width: 767px)" srcset="
+                            ./img/elbrus-mobile@2x.jpg 2x,
+                            ./img/elbrus-mobile.jpg    1x
+                          ">
+                        <!-- <source srcset="./img/elbrus@2x.webp 2x, ./img/elbrus.webp 1x" type="image/webp"> -->
+                        <img src="./img/elbrus.jpg" srcset="./img/elbrus@2x.jpg 2x" alt="Эльбрус">
+                      </picture>
                     </div>
-                    <div class="tour__info-date">
-                      <p>Дата набора:</p>
-                      <span>12.06-19.06</span>
+                    <div class="tour__desc">
+                      <p class="tour__desc-location">
+                        <svg width="19" height="12">
+                          <use xlink:href="#icon-location"></use>
+                        </svg>
+                        Кавказ
+                      </p>
+                      <p class="tour__desc-day">
+                        <svg width="22" height="22">
+                          <use xlink:href="#icon-sun"></use>
+                        </svg>
+                        4 дня
+                      </p>
+                      <p class="tour__desc-night">
+                        <svg width="20" height="20">
+                          <use xlink:href="#icon-moon"></use>
+                        </svg>
+                        3 ночи
+                      </p>
                     </div>
-                    <div class="tour__info-group">
-                      <p>Группа:</p>
-                      <span>до 15 чел.</span>
+
+                    <h3 class="tour__caption">Путешествие вокруг Эльбруса</h3>
+
+                    <div class="tour__info">
+                      <div class="tour__line"></div>
+                      <div class="tour__info-rating">
+                        <p>Сложность:</p>
+                        <svg width="79" height="14">
+                          <use xlink:href="#icon-rating-3"></use>
+                        </svg>
+                      </div>
+                      <div class="tour__info-date">
+                        <p>Дата набора:</p>
+                        <span>12.06-19.06</span>
+                      </div>
+                      <div class="tour__info-group">
+                        <p>Группа:</p>
+                        <span>до 15 чел.</span>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
+                <!-- Slide2 -->
+                <div class="swiper-slide">
+                  <a href="#" class="tour__wrapper">
+                    <div class="tour__img">
+                      <picture>
+                        <!-- <source media="(max-width: 767px)" srcset="./img/altai-mobile@2x.webp 2x, ./img/altai-mobile.webp 1x" type="image/webp"> -->
+                        <source media="(max-width: 767px)" srcset="
+                            ./img/altai-mobile@2x.jpg 2x,
+                            ./img/altai-mobile.jpg    1x
+                          ">
+                        <!-- <source srcset="./img/altai@2x.webp 2x, ./img/altai.webp 1x" type="image/webp"> -->
+                        <img src="./img/altai.jpg" srcset="./img/altai@2x.jpg 2x" alt="Алтай">
+                      </picture>
+                    </div>
+                    <div class="tour__desc">
+                      <p class="tour__desc-location">
+                        <svg width="19" height="12">
+                          <use xlink:href="#icon-location"></use>
+                        </svg>
+                        Алтай
+                      </p>
+                      <p class="tour__desc-day">
+                        <svg width="22" height="22">
+                          <use xlink:href="#icon-sun"></use>
+                        </svg>
+                        14 дней
+                      </p>
+                      <p class="tour__desc-night">
+                        <svg width="20" height="20">
+                          <use xlink:href="#icon-moon"></use>
+                        </svg>
+                        13 ночей
+                      </p>
+                    </div>
+
+                    <h3 class="tour__caption">Путь к подножию Белухи</h3>
+
+                    <div class="tour__info">
+                      <div class="tour__line"></div>
+                      <div class="tour__info-rating">
+                        <p>Сложность:</p>
+                        <svg width="79" height="14">
+                          <use xlink:href="#icon-rating-2"></use>
+                        </svg>
+                      </div>
+                      <div class="tour__info-date">
+                        <p>Дата набора:</p>
+                        <span>14.06-23.06</span>
+                      </div>
+                      <div class="tour__info-group">
+                        <p>Группа:</p>
+                        <span>до 25 чел.</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Slide3 -->
+                <div class="swiper-slide">
+                  <a href="#" class="tour__wrapper">
+                    <div class="tour__img">
+                      <picture>
+                        <!-- <source media="(max-width: 767px)" srcset="./img/adygea-mobile@2x.webp 2x, ./img/adygea-mobile.webp 1x" type="image/webp"> -->
+                        <source media="(max-width: 767px)" srcset="
+                            ./img/adygea-mobile@2x.jpg 2x,
+                            ./img/adygea-mobile.jpg    1x
+                          ">
+                        <!-- <source srcset="./img/adygea@2x.webp 2x, ./img/adygea.webp 1x" type="image/webp"> -->
+                        <img src="./img/adygea.jpg" srcset="./img/adygea@2x.jpg 2x" alt="Адыгея">
+                      </picture>
+                    </div>
+                    <div class="tour__desc">
+                      <p class="tour__desc-location">
+                        <svg width="19" height="12">
+                          <use xlink:href="#icon-location"></use>
+                        </svg>
+                        Адыгея
+                      </p>
+                      <p class="tour__desc-day">
+                        <svg width="22" height="22">
+                          <use xlink:href="#icon-sun"></use>
+                        </svg>
+                        7 дней
+                      </p>
+                      <p class="tour__desc-night">
+                        <svg width="20" height="20">
+                          <use xlink:href="#icon-moon"></use>
+                        </svg>
+                        6 ночей
+                      </p>
+                    </div>
+
+                    <h3 class="tour__caption">Через Фишт к Черному морю</h3>
+
+                    <div class="tour__info">
+                      <div class="tour__line"></div>
+                      <div class="tour__info-rating">
+                        <p>Сложность:</p>
+                        <svg width="79" height="14">
+                          <use xlink:href="#icon-rating-3"></use>
+                        </svg>
+                      </div>
+                      <div class="tour__info-date">
+                        <p>Дата набора:</p>
+                        <span>15.07-19.07</span>
+                      </div>
+                      <div class="tour__info-group">
+                        <p>Группа:</p>
+                        <span>до 22 чел.</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
               </div>
-              <!-- Slide2 -->
-              <div class="swiper-slide">
-                <a href="#" class="tour__wrapper">
-                  <div class="tour__img">
-                    <picture>
-                      <!-- <source media="(max-width: 767px)" srcset="./img/altai-mobile@2x.webp 2x, ./img/altai-mobile.webp 1x" type="image/webp"> -->
-                      <source media="(max-width: 767px)" srcset="./img/altai-mobile@2x.jpg 2x, ./img/altai-mobile.jpg 1x">
-                      <!-- <source srcset="./img/altai@2x.webp 2x, ./img/altai.webp 1x" type="image/webp"> -->
-                      <img src="./img/altai.jpg" srcset="./img/altai@2x.jpg 2x" alt="Алтай">
-                    </picture>
-                  </div>
-                  <div class="tour__desc">
-                    <p class="tour__desc-location">
-                      <svg width="19" height="12">
-                        <use xlink:href="#icon-location"></use>
-                      </svg>
-                      Алтай
-                    </p>
-                    <p class="tour__desc-day">
-                      <svg width="22" height="22">
-                        <use xlink:href="#icon-sun"></use>
-                      </svg>
-                      14 дней
-                    </p>
-                    <p class="tour__desc-night">
-                      <svg width="20" height="20">
-                        <use xlink:href="#icon-moon"></use>
-                      </svg>
-                      13 ночей
-                    </p>
-                  </div>
-
-                  <h3 class="tour__caption">Путь к подножию Белухи</h3>
-
-                  <div class="tour__info">
-                    <div class="tour__line"></div>
-                    <div class="tour__info-rating">
-                      <p>Сложность:</p>
-                      <svg width="79" height="14">
-                        <use xlink:href="#icon-rating-2"></use>
-                      </svg>
-                    </div>
-                    <div class="tour__info-date">
-                      <p>Дата набора:</p>
-                      <span>14.06-23.06</span>
-                    </div>
-                    <div class="tour__info-group">
-                      <p>Группа:</p>
-                      <span>до 25 чел.</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!-- Slide3 -->
-              <div class="swiper-slide">
-                <a href="#" class="tour__wrapper">
-                  <div class="tour__img">
-                    <picture>
-                      <!-- <source media="(max-width: 767px)" srcset="./img/adygea-mobile@2x.webp 2x, ./img/adygea-mobile.webp 1x" type="image/webp"> -->
-                      <source media="(max-width: 767px)" srcset="./img/adygea-mobile@2x.jpg 2x, ./img/adygea-mobile.jpg 1x">
-                      <!-- <source srcset="./img/adygea@2x.webp 2x, ./img/adygea.webp 1x" type="image/webp"> -->
-                      <img src="./img/adygea.jpg" srcset="./img/adygea@2x.jpg 2x" alt="Адыгея">
-                    </picture>
-                  </div>
-                  <div class="tour__desc">
-                    <p class="tour__desc-location">
-                      <svg width="19" height="12">
-                        <use xlink:href="#icon-location"></use>
-                      </svg>
-                      Адыгея
-                    </p>
-                    <p class="tour__desc-day">
-                      <svg width="22" height="22">
-                        <use xlink:href="#icon-sun"></use>
-                      </svg>
-                      7 дней
-                    </p>
-                    <p class="tour__desc-night">
-                      <svg width="20" height="20">
-                        <use xlink:href="#icon-moon"></use>
-                      </svg>
-                      6 ночей
-                    </p>
-                  </div>
-
-                  <h3 class="tour__caption">Через Фишт к Черному морю</h3>
-
-                  <div class="tour__info">
-                    <div class="tour__line"></div>
-                    <div class="tour__info-rating">
-                      <p>Сложность:</p>
-                      <svg width="79" height="14">
-                        <use xlink:href="#icon-rating-3"></use>
-                      </svg>
-                    </div>
-                    <div class="tour__info-date">
-                      <p>Дата набора:</p>
-                      <span>15.07-19.07</span>
-                    </div>
-                    <div class="tour__info-group">
-                      <p>Группа:</p>
-                      <span>до 22 чел.</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
 
-          <!-- Ссылка на туры -->
-          <a href="#" class="tour__link">Показать все туры
-            <svg width="9" height="14" viewBox="0 0 9 14" fill="none">
-              <path d="M1 13L7 7L0.999999 1" stroke="#2D383F" stroke-width="2"></path>
+            <!-- Ссылка на туры -->
+            <a href="#" class="tour__link">Показать все туры
+              <svg width="9" height="14" viewBox="0 0 9 14" fill="none">
+                <path d="M1 13L7 7L0.999999 1" stroke="#2D383F" stroke-width="2"></path>
               </svg>
-          </a>
+            </a>
+          </section>
+        </div>
+
+        <!-- Обучение -->
+        <div class="container container--nopadding-right">
+          <section class="training">
+            <p class="training__title-shadow">Обучение</p>
+            <h2>Обучение</h2>
+            <p class="training__decs">
+              Обучение проводится квалифицированными специалистами, за плечами
+              которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев,
+              Эльбруса, Алтая, Карелии, Адыгеи и других.
+            </p>
+            <h3>Наши инструкторы</h3>
+
+            <!-- Swiper -->
+            <div class="training__swiper-container swiper-container">
+              <!-- Swiper-wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slide1 -->
+                <div class="swiper-slide training_swiper-slide">
+                  <!-- Изображение -->
+                  <div class="training__img">
+                    <picture>
+                      <!-- <source media="(max-width: 767px)" srcset="./img/coach1@2x.webp 2x, ./img/coach1.webp 1x" type="image/webp"> -->
+                      <source media="(max-width: 767px)" srcset="./img/coach1@2x.jpg 2x, ./img/coach1.jpg 1x">
+                      <!-- <source srcset="./img/coach1@2x.webp 2x, ./img/coach1.webp 1x" type="image/webp"> -->
+                      <img src="./img/coach1.jpg" srcset="./img/coach1@2x.jpg 2x" alt="Тренер">
+                    </picture>
+                  </div>
+
+                  <!-- Описание -->
+                  <div class="training__inner">
+                    <p class="training__coach">Александр Прокофьев</p>
+                    <p class="training__coach-about">
+                      Любит природу. Строгий, справедливый и внимательный
+                      инструктор, веселый и общительный человек
+                    </p>
+                    <a href="#" class="training__coach-social">
+                      <svg width="12" height="8">
+                        <use xlink:href="#icon-vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <!-- Slide1 -->
+                <div class="swiper-slide training_swiper-slide">
+                  <!-- Изображение -->
+                  <div class="training__img">
+                    <picture>
+                      <!-- <source media="(max-width: 767px)" srcset="./img/coach1@2x.webp 2x, ./img/coach1.webp 1x" type="image/webp"> -->
+                      <source media="(max-width: 767px)" srcset="./img/coach1@2x.jpg 2x, ./img/coach1.jpg 1x">
+                      <!-- <source srcset="./img/coach1@2x.webp 2x, ./img/coach1.webp 1x" type="image/webp"> -->
+                      <img src="./img/coach1.jpg" srcset="./img/coach1@2x.jpg 2x" alt="Тренер">
+                    </picture>
+                  </div>
+
+                  <!-- Описание -->
+                  <div class="training__inner">
+                    <p class="training__coach">Александр Прокофьев</p>
+                    <p class="training__coach-about">
+                      Любит природу. Строгий, справедливый и внимательный
+                      инструктор, веселый и общительный человек
+                    </p>
+                    <a href="#" class="training__coach-social">
+                      <svg width="12" height="8">
+                        <use xlink:href="#icon-vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <!-- Slide1 -->
+                <div class="swiper-slide training_swiper-slide">
+                  <!-- Изображение -->
+                  <div class="training__img">
+                    <picture>
+                      <!-- <source media="(max-width: 767px)" srcset="./img/coach1@2x.webp 2x, ./img/coach1.webp 1x" type="image/webp"> -->
+                      <source media="(max-width: 767px)" srcset="./img/coach1@2x.jpg 2x, ./img/coach1.jpg 1x">
+                      <!-- <source srcset="./img/coach1@2x.webp 2x, ./img/coach1.webp 1x" type="image/webp"> -->
+                      <img src="./img/coach1.jpg" srcset="./img/coach1@2x.jpg 2x" alt="Тренер">
+                    </picture>
+                  </div>
+
+                  <!-- Описание -->
+                  <div class="training__inner">
+                    <p class="training__coach">Александр Прокофьев</p>
+                    <p class="training__coach-about">
+                      Любит природу. Строгий, справедливый и внимательный
+                      инструктор, веселый и общительный человек
+                    </p>
+                    <a href="#" class="training__coach-social">
+                      <svg width="12" height="8">
+                        <use xlink:href="#icon-vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <!-- Slide1 -->
+                <div class="swiper-slide training_swiper-slide">
+                  <!-- Изображение -->
+                  <div class="training__img">
+                    <picture>
+                      <!-- <source media="(max-width: 767px)" srcset="./img/coach1@2x.webp 2x, ./img/coach1.webp 1x" type="image/webp"> -->
+                      <source media="(max-width: 767px)" srcset="./img/coach1@2x.jpg 2x, ./img/coach1.jpg 1x">
+                      <!-- <source srcset="./img/coach1@2x.webp 2x, ./img/coach1.webp 1x" type="image/webp"> -->
+                      <img src="./img/coach1.jpg" srcset="./img/coach1@2x.jpg 2x" alt="Тренер">
+                    </picture>
+                  </div>
+
+                  <!-- Описание -->
+                  <div class="training__inner">
+                    <p class="training__coach">Александр Прокофьев</p>
+                    <p class="training__coach-about">
+                      Любит природу. Строгий, справедливый и внимательный
+                      инструктор, веселый и общительный человек
+                    </p>
+                    <a href="#" class="training__coach-social">
+                      <svg width="12" height="8">
+                        <use xlink:href="#icon-vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next training__swiper-button-next"></div>
+              <div class="swiper-button-prev training__swiper-button-prev"></div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Процесс обучения -->
+      <div class="container">
+        <section class="process">
+          <h2>Процесс обучения</h2>
+          <ul class="process__list">
+            <li class="process__item">
+              <div class="process__item-img">
+                <svg width="25" height="25">
+                  <use xlink:href="#icon-map"></use>
+                </svg>
+              </div>
+              <p>Изучение спортивного туристского движения</p>
+            </li>
+            <li class="process__item">
+              <div class="process__item-img">
+                <svg width="25" height="25">
+                  <use xlink:href="#icon-boot"></use>
+                </svg>
+              </div>
+              <p>Подготовка и техническое снаряжение в походах</p>
+            </li>
+            <li class="process__item process__item--end process__item--order">
+              <div class="process__item-img">
+                <svg width="25" height="25">
+                  <use xlink:href="#icon-tree"></use>
+                </svg>
+              </div>
+              <p>Лекции по экологии, окружающей среде и гигиене</p>
+            </li>
+            <li class="process__item process__item--end">
+              <div class="process__item-img">
+                <svg width="25" height="25">
+                  <use xlink:href="#icon-mountain"></use>
+                </svg>
+              </div>
+              <p>Разъяснение характера горных препядствий и их сложности</p>
+            </li>
+            <li>
+              <div class="process__line"></div>
+            </li>
+          </ul>
         </section>
       </div>
 
-      <!-- Обучение -->
-      <div class="container container--nopadding-right">
-        <section class="training">
-          <p class="training__title-shadow">Обучение</p>
-          <h2>Обучение</h2>
-          <p class="training__decs">Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
-          <h3>Наши инструкторы</h3>
-
-          <!-- Swiper -->
-          <div class="training__swiper-container swiper-container">
-            <!-- Swiper-wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slide1 -->
-              <div class="swiper-slide training_swiper-slide">
-                <!-- Изображение -->
-                <div class="training__img">
-                  <picture>
-                    <!-- <source media="(max-width: 767px)" srcset="./img/coach1@2x.webp 2x, ./img/coach1.webp 1x" type="image/webp"> -->
-                    <source media="(max-width: 767px)" srcset="./img/coach1@2x.jpg 2x, ./img/coach1.jpg 1x">
-                    <!-- <source srcset="./img/coach1@2x.webp 2x, ./img/coach1.webp 1x" type="image/webp"> -->
-                    <img src="./img/coach1.jpg" srcset="./img/coach1@2x.jpg 2x" alt="Тренер">
-                  </picture>
-                </div>
-
-                <!-- Описание -->
-                <div class="training__inner">
-                  <p class="training__coach">Александр Прокофьев</p>
-                  <p class="training__coach-about">Любит природу. Строгий, справедливый и внимательный инструктор, веселый и общительный человек</p>
-                  <a href="#" class="training__coach-social">
-                    <svg width="12" height="8">
-                      <use xlink:href="#icon-vk"></use>
-                    </svg>
-                  </a>
-                </div>
+      <!-- О нас -->
+      <div class="container-fluid about">
+        <div class="container container--nopadding-left">
+          <section class="about__wrapper">
+            <div class="about__box">
+              <!-- Заголовок -->
+              <div class="about__title">
+                <p class="about__title-shadow">О нас</p>
+                <h2>О нас</h2>
               </div>
-              <!-- Slide1 -->
-              <div class="swiper-slide training_swiper-slide">
-                <!-- Изображение -->
-                <div class="training__img">
-                  <picture>
-                    <!-- <source media="(max-width: 767px)" srcset="./img/coach1@2x.webp 2x, ./img/coach1.webp 1x" type="image/webp"> -->
-                    <source media="(max-width: 767px)" srcset="./img/coach1@2x.jpg 2x, ./img/coach1.jpg 1x">
-                    <!-- <source srcset="./img/coach1@2x.webp 2x, ./img/coach1.webp 1x" type="image/webp"> -->
-                    <img src="./img/coach1.jpg" srcset="./img/coach1@2x.jpg 2x" alt="Тренер">
-                  </picture>
-                </div>
 
-                <!-- Описание -->
-                <div class="training__inner">
-                  <p class="training__coach">Александр Прокофьев</p>
-                  <p class="training__coach-about">Любит природу. Строгий, справедливый и внимательный инструктор, веселый и общительный человек</p>
-                  <a href="#" class="training__coach-social">
-                    <svg width="12" height="8">
-                      <use xlink:href="#icon-vk"></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <!-- Slide1 -->
-              <div class="swiper-slide training_swiper-slide">
-                <!-- Изображение -->
-                <div class="training__img">
-                  <picture>
-                    <!-- <source media="(max-width: 767px)" srcset="./img/coach1@2x.webp 2x, ./img/coach1.webp 1x" type="image/webp"> -->
-                    <source media="(max-width: 767px)" srcset="./img/coach1@2x.jpg 2x, ./img/coach1.jpg 1x">
-                    <!-- <source srcset="./img/coach1@2x.webp 2x, ./img/coach1.webp 1x" type="image/webp"> -->
-                    <img src="./img/coach1.jpg" srcset="./img/coach1@2x.jpg 2x" alt="Тренер">
-                  </picture>
-                </div>
-
-                <!-- Описание -->
-                <div class="training__inner">
-                  <p class="training__coach">Александр Прокофьев</p>
-                  <p class="training__coach-about">Любит природу. Строгий, справедливый и внимательный инструктор, веселый и общительный человек</p>
-                  <a href="#" class="training__coach-social">
-                    <svg width="12" height="8">
-                      <use xlink:href="#icon-vk"></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <!-- Slide1 -->
-              <div class="swiper-slide training_swiper-slide">
-                <!-- Изображение -->
-                <div class="training__img">
-                  <picture>
-                    <!-- <source media="(max-width: 767px)" srcset="./img/coach1@2x.webp 2x, ./img/coach1.webp 1x" type="image/webp"> -->
-                    <source media="(max-width: 767px)" srcset="./img/coach1@2x.jpg 2x, ./img/coach1.jpg 1x">
-                    <!-- <source srcset="./img/coach1@2x.webp 2x, ./img/coach1.webp 1x" type="image/webp"> -->
-                    <img src="./img/coach1.jpg" srcset="./img/coach1@2x.jpg 2x" alt="Тренер">
-                  </picture>
-                </div>
-
-                <!-- Описание -->
-                <div class="training__inner">
-                  <p class="training__coach">Александр Прокофьев</p>
-                  <p class="training__coach-about">Любит природу. Строгий, справедливый и внимательный инструктор, веселый и общительный человек</p>
-                  <a href="#" class="training__coach-social">
-                    <svg width="12" height="8">
-                      <use xlink:href="#icon-vk"></use>
-                    </svg>
-                  </a>
-                </div>
+              <!-- История -->
+              <div class="about__history">
+                <h3>История компании</h3>
+                <p>
+                  В далеком 2000 году мы начали заниматься туризмом - походы,
+                  поездки, восхождения, нам это настолько понравилось, что мы этим
+                  стали жить. Спустя 5 лет, в 2005 году мы основали компанию, чтобы
+                  показывать людям удивительные места нашей страны.
+                </p>
               </div>
             </div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next training__swiper-button-next"></div>
-            <div class="swiper-button-prev training__swiper-button-prev"></div>
-          </div>
-        </section>
+
+
+            <div class="about__target">
+              <h3>Наша цель</h3>
+              <p>
+                Подарить вам незабываемые впечатления от похода в горы. Мы берем
+                на себя все организационные вопросы. При организации мы
+                обязательно учтем все ваши пожелания. Вам остенется только
+                наслаждаться незабываемым приключеним.
+              </p>
+            </div>
+
+          </section>
+        </div>
       </div>
-    </div>
+    </main>
 
-
-    <!-- Процесс обучения -->
-    <div class="container">
-
-      <section class="process">
-        <h2>Процесс обучения</h2>
-        <ul class="process__list">
-          <li class="process__item">
-            <div class="process__item-img">
-              <svg width="25" height="25">
-                <use xlink:href="#icon-map"></use>
-              </svg>
-            </div>
-            <p>Изучение спортивного туристского движения</p>
-          </li>
-          <li class="process__item">
-            <div class="process__item-img">
-              <svg width="25" height="25">
-                <use xlink:href="#icon-boot"></use>
-              </svg>
-            </div>
-            <p>Подготовка и техническое снаряжение в походах</p>
-          </li>
-          <li class="process__item process__item--end process__item--order">
-            <div class="process__item-img">
-              <svg width="25" height="25">
-                <use xlink:href="#icon-tree"></use>
-              </svg>
-            </div>
-            <p>Лекции по экологии, окружающей среде и гигиене</p>
-          </li>
-          <li class="process__item process__item--end">
-            <div class="process__item-img">
-              <svg width="25" height="25">
-                <use xlink:href="#icon-mountain"></use>
-              </svg>
-            </div>
-            <p>Разъяснение характера горных препядствий и их сложности</p>
-          </li>
-        </ul>
-        <div class="process__line"></div>
-      </section>
-    </div>
-
-
-  </main>
-
-  <script src="./js/jqeury.min.js"></script>
-  <script src="https://polyfill.io/v3/polyfill.min.js"></script>
-  <script src="./js/swiper.min.js"></script>
-  <script src="./js/modernizr.min.js"></script>
-  <script src="./js/script.js"></script>
-
-</body>
+    <script src="./js/jqeury.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/modernizr.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
