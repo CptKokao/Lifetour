@@ -1,11 +1,40 @@
 .about {
-  background: url("../img/about-bg.jpg") left no-repeat;
-  background-position-y: -130px;
+  position: relative;
+  min-height: 575px;
+  margin-top: 105px;
   padding-bottom: 20px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 60px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 350px;
+  }
+}
+
+.about__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 56%;
+  height: 100%;
+  background: url("../img/about-bg.jpg") center no-repeat;
+  background-size: cover;
+
+  @media (max-width: $tablet-width) {
+    width: 49%;
+    height: 70%;
+    background: url("../img/about-tablet-bg.jpg") center no-repeat;
+    background-size: cover;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 .about__wrapper {
-  margin-top: 105px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -28,9 +57,16 @@
 }
 
 .about__box {
-  width: 46%;
+  width: 44%;
   margin-top: 50px;
-  padding-left: 5px;
+
+  @media (max-width: $tablet-width) {
+    width: 51%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 .about__history,
@@ -41,6 +77,11 @@
     line-height: 26px;
     color: #2D383F;
     letter-spacing: 1.5px;
+
+    @media (max-width: $tablet-width) {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 
   p {
@@ -55,18 +96,26 @@
 .about__history {
   margin-top: 50px;
 
+  @media (max-width: $tablet-width) {
+    margin-top: 47px;
+  }
+
   p {
     margin-top: 17px;
   }
 }
 
 .about__target {
-  width: 46%;
+  width: 44%;
   margin-top: 50px;
-  padding-left: 5px;
 
   p {
     margin-top: 17px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin-top: 70px;
   }
 }
 
