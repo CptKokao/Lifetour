@@ -1,0 +1,44 @@
+.review__swiper-slide {
+  width: 389px;
+  height: 504px;
+  padding: 45px 35px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.review__swiper-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.review__swiper-img {
+  width: 96px;
+  height: 100px;
+  margin-right: 5px;
+}
+
+.review__swiper-title {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.review__swiper-desc {
+  position: relative;
+
+  &::after {
+    content: "“";
+    // font-family: "Gotham Pro";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 66px;
+    line-height: 102px;
+    color: #2D383F;
+    // opacity: 0.05;
+  }
+}
