@@ -1,5 +1,5 @@
 .tour {
-  background: url("../img/bg.png") right no-repeat;
+  background: url("../img/tour-bg.png") right no-repeat;
   background-position-y: -10px;
 }
 
@@ -221,4 +221,9 @@
   @media (max-width: $mobile-width) {
     margin-top: 10px;
   }
+}
+
+.tour__swiper-button-next,
+.tour__swiper-button-prev {
+  top: 15%;
 }

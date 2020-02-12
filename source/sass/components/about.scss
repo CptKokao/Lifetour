@@ -17,7 +17,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 56%;
+  width: 50%;
   height: 100%;
   background: url("../img/about-bg.jpg") center no-repeat;
   background-size: cover;
@@ -57,7 +57,7 @@
 }
 
 .about__box {
-  width: 44%;
+  width: 46%;
   margin-top: 50px;
 
   @media (max-width: $tablet-width) {
@@ -106,7 +106,7 @@
 }
 
 .about__target {
-  width: 44%;
+  width: 46%;
   margin-top: 50px;
 
   p {
