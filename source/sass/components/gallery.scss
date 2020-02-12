@@ -1,3 +1,39 @@
+.gallery {
+  position: relative;
+  padding-bottom: 20px;
+
+  h2 {
+    @include title();
+
+    position: absolute;
+    top: 35px;
+    left: 0;
+  }
+}
+
+.gallery__box {
+  position: relative;
+}
+
+.gallery__title-shadow {
+  @include title-shadow();
+
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.gallery__decs {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 60%;
+}
+
+.gallery__swiper-container {
+  padding-top: 170px;
+}
+
 .gallery__swiper-slide {
   width: 275px;
   height: auto;
@@ -6,4 +42,12 @@
 .gallery__swiper-slide--double {
   width: 298px;
   height: auto;
+}
+
+.gallery__swiper-button-next {
+  right: 125px;
+}
+
+.gallery__swiper-button-prev {
+  right: 170px;
 }

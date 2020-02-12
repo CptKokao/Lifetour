@@ -13,14 +13,14 @@
 
   @media (max-width: $tablet-width) {
     background: url("../img/line-tablet.svg") center no-repeat;
-    top: 65px;
+    top: -240px;
     left: 0;
     height: 115px;
   }
 
   @media (max-width: $mobile-width) {
     background: url("../img/line-mobile.svg") center no-repeat;
-    top: 0;
+    top: -335px;
     left: 0;
     width: 20px;
     height: 235px;

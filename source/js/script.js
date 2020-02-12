@@ -42,8 +42,7 @@ var swiper = new Swiper(".training__swiper-container", {
 
 // Swiper
 var swiper = new Swiper(".gallery__swiper-container", {
-  width: 1196,
-  slidesPerView: 5,
+  slidesPerView: 'auto',
   spaceBetween: 5,
   loop: true,
   navigation: {
