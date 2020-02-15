@@ -20,6 +20,7 @@
     }
 
     @media (max-width: $mobile-width) {
+      padding-left: 17px;
       font-size: 12px;
       line-height: 15px;
     }
@@ -28,16 +29,18 @@
   p {
     font-size: 8px;
     line-height: 10px;
-    padding-left: 80px;
+    padding-left: 85px;
+    letter-spacing: 0.5px;
 
     @media (max-width: $tablet-width) {
-      padding-left: 0;
+      padding-left: 5px;
       font-size: 6px;
       line-height: 7px;
     }
 
     @media (max-width: $mobile-width) {
-      font-size: 5px;
+      padding-left: 15px;
+      font-size: 4px;
       line-height: 5px;
     }
   }
@@ -51,15 +54,15 @@
   height: 62px;
 
   @media (max-width: $tablet-width) {
-    top: -10px;
-    left: -45px;
+    top: -8px;
+    left: -40px;
     width: 36px;
     height: 36px;
   }
 
   @media (max-width: $mobile-width) {
-    top: -10px;
-    left: -40px;
+    top: -5px;
+    left: -23px;
     width: 30px;
     height: 30px;
   }

@@ -7,7 +7,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-top: 85px;
+    margin-top: 87px;
   }
 
   h2 {
@@ -44,22 +44,21 @@
   position: absolute;
   top: -20px;
   left: 0;
+
+  @media (max-width: $mobile-width) {
+    top: -7px;
+  }
 }
 
 .training__decs {
-  width: 825px;
+  width: 73%;
   margin-top: 30px;
-
   line-height: 26px;
-  letter-spacing: 1.3px;
-
-  @media (max-width: $tablet-width) {
-    width: 480px;
-  }
+  letter-spacing: 1.4px;
 
   @media (max-width: $mobile-width) {
     margin-top: 20px;
-    width: 281px;
+    width: 85%;
 
     font-size: 14px;
     line-height: 23px;
@@ -67,10 +66,10 @@
 }
 
 .training__swiper-container {
-  padding-top: 85px;
+  padding-top: 112px;
   padding-bottom: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
 
   @media (max-width: $tablet-width) {
     padding-top: 125px;
@@ -86,11 +85,14 @@
   min-height: 386px;
   padding: 15px 10px;
 
-
   background: #FFFFFF;
-  // opacity: 0.09;
   border: 1px solid #FFFFFF;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: $tablet-width) {
+    padding-left: 15px;
+    padding-right: 7px;
+  }
 }
 
 .training__inner {
@@ -99,16 +101,20 @@
 
 .training__coach {
   width: 87px;
-  margin-top: 20px;
-  font-weight: bold;
+  margin-top: 24px;
+  font-weight: 700;
   font-size: 14px;
   line-height: 19px;
+  color: #000;
+  letter-spacing: 1px;
 
-  color: #000000;
+  @media (max-width: $mobile-width) {
+    margin-top: 19px;
+  }
 }
 
 .training__coach-about {
-  margin-top: 10px;
+  margin-top: 7px;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 1px;
@@ -116,8 +122,8 @@
 
 .training__coach-social {
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 3px;
+  right: 9px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,7 +138,7 @@
 
 .training__swiper-button-next,
 .training__swiper-button-prev {
-  top: 9%;
+  top: 13%;
 
   @media (max-width: $tablet-width) {
     top: 16%;
