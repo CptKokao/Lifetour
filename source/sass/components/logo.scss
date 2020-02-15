@@ -11,10 +11,10 @@
     font-size: 23px;
     line-height: 28px;
     text-transform: uppercase;
-    padding-left: 80px;
+    padding-left: 85px;
 
     @media (max-width: $tablet-width) {
-      padding-left: 0;
+      padding-left: 6px;
       font-size: 16px;
       line-height: 20px;
     }
@@ -52,7 +52,7 @@
 
   @media (max-width: $tablet-width) {
     top: -10px;
-    left: -50px;
+    left: -45px;
     width: 36px;
     height: 36px;
   }

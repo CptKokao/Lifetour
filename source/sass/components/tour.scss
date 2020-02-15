@@ -1,6 +1,16 @@
 .tour {
-  background: url("../img/tour-bg.png") right no-repeat;
-  background-position-y: -10px;
+  background: url("../img/tour-bg.png") right no-repeat,
+    url("../img/cloud.png") top center no-repeat;
+  padding-top: 134px;
+  margin-top: -137px;
+
+  @media (max-width: $mobile-width) {
+    padding-top: 120px;
+    margin-top: -120px;
+
+    background: url("../img/tour-bg.png") right no-repeat,
+      url("../img/cloud.png") top right no-repeat;
+  }
 }
 
 .tour__box {
@@ -41,7 +51,6 @@
 }
 
 // Стили для слайдера
-
 .tour__swiper-container {
   padding-top: 160px;
   padding-bottom: 20px;
@@ -212,7 +221,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #2D383F;
+  color: #2d383f;
 
   @media (max-width: $tablet-width) {
     margin-top: 22px;

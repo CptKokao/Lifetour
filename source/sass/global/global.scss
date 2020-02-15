@@ -70,7 +70,7 @@ a {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
-  outline: 1px solid pink;
+  // outline: 1px solid pink;
 
   @media (max-width: $tablet-width) {
     padding-left: 110px;
@@ -86,14 +86,14 @@ a {
 .container--nopadding-right {
   @media (max-width: $tablet-width) {
     padding-right: 0;
-    outline: 1px solid green;
+    // outline: 1px solid green;
   }
 }
 
 .container--nopadding-left {
   @media (max-width: $tablet-width) {
     padding-left: 0;
-    outline: 1px solid green;
+    // outline: 1px solid green;
   }
 }
 
