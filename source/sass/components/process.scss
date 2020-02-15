@@ -53,6 +53,10 @@
     color: #2d383f;
 
     @media (max-width: $tablet-width) {
+      margin-left: 9px;
+    }
+
+    @media (max-width: $tablet-width) {
       font-size: 14px;
       line-height: 20px;
     }

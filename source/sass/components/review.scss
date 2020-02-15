@@ -1,11 +1,20 @@
 .review {
   position: relative;
 
+  @media (max-width: $tablet-width) {
+    margin-top: 37px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 5px;
+  }
+
   h2 {
-    position: absolute;
-    top: 75px;
-    left: 0;
     @include title();
+
+    position: absolute;
+    top: 35px;
+    left: 0;
   }
 }
 
@@ -13,32 +22,44 @@
   @include title-shadow();
 
   position: absolute;
-  top: 58px;
+  top: 18px;
   left: 0;
 }
 
 .review__swiper-container {
-  padding-top: 150px;
+  padding-top: 110px;
+  padding-left: 4px;
+  padding-right: 4px;
+
+  @media (max-width: $mobile-width) {
+    padding-top: 93px;
+  }
 }
 
 .review__swiper-slide {
-  width: 389px;
+  width: 387px;
   height: 504px;
-  padding-top: 45px;
+  padding-top: 55px;
   padding-bottom: 45px;
   padding-left: 35px;
-  margin: 5px;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  padding-right: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   font-weight: normal;
   font-size: 14px;
   letter-spacing: 1px;
   line-height: 23px;
+
+  @media (max-width: $mobile-width) {
+    width: 278px;
+    height: 545px;
+    padding: 50px 10px 43px 10px;
+  }
 }
 
 .review__swiper-header {
   display: flex;
   align-items: center;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
 .review__swiper-img {
@@ -54,11 +75,12 @@
 .review__swiper-desc {
   position: relative;
 
-  &::before,
-  &::after {
+  &::before {
     content: "“";
     font-family: "Gotham Pro", "Arial", sans-serif;
     position: absolute;
+    top: -40px;
+    left: 0;
     width: 50px;
     height: 50px;
     font-size: 66px;
@@ -67,20 +89,28 @@
     opacity: 0.05;
   }
 
-  &::before {
-    top: -40px;
-    left: 0;
-  }
+  &:last-child {
+    position: relative;
 
-  &::after {
-    bottom: -35px;
-    right: 50%;
-    transform: rotate(180deg);
+    &::after {
+      content: "“";
+      font-family: "Gotham Pro", "Arial", sans-serif;
+      position: absolute;
+      bottom: -35px;
+      right: 45px;
+      transform: rotate(180deg);
+      width: 50px;
+      height: 50px;
+      font-size: 66px;
+      line-height: 102px;
+      color: #2D383F;
+      opacity: 0.05;
+    }
   }
 }
 
 .review__swiper-small-text {
-  width: 230px;
+  width: 240px;
   margin-bottom: 20px;
 }
 
@@ -88,7 +118,23 @@
   margin-top: 20px;
 }
 
-// .review__swiper-button-next,
-// .review__swiper-button-prev {
-//   top: -8%;
-// }
+.review__swiper-button-next,
+.review__swiper-button-prev {
+  top: 11%;
+
+  @media (max-width: $tablet-width) {
+    top: 9%;
+  }
+}
+
+.review__swiper-button-next {
+  @media (max-width: $tablet-width) {
+    right: 3px;
+  }
+}
+
+.review__swiper-button-prev {
+  @media (max-width: $tablet-width) {
+    right: 43px;
+  }
+}

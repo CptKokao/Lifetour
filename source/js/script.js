@@ -1,6 +1,15 @@
 "use strict";
 // hamburger
 
+if (!String.prototype.startsWith) {
+  Object.defineProperty(String.prototype, 'startsWith', {
+      value: function(search, rawPos) {
+          var pos = rawPos > 0 ? rawPos|0 : 0;
+          return this.substring(pos, pos + search.length) === search;
+      }
+  });
+}
+
 $(document).ready(function() {
   $(".hamburger").click(function() {
     $(this).toggleClass("is-active");
@@ -43,7 +52,7 @@ var swiper = new Swiper(".training__swiper-container", {
 // Swiper
 var swiper = new Swiper(".review__swiper-container", {
   slidesPerView: 'auto',
-  spaceBetween: 5,
+  spaceBetween: 15,
   loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
