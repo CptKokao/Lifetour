@@ -25,8 +25,8 @@
   background-size: contain;
 
   @media (max-width: $tablet-width) {
-    width: 50%;
-    height: 81%;
+    width: 49%;
+    height: 77%;
     background: url("../img/about-bg-mobile.jpg") left center no-repeat;
   }
 
@@ -64,11 +64,13 @@
   position: relative;
 
   @media (max-width: $tablet-width) {
-    width: 50%;
+    width: 51%;
+    margin-top: 55px;
   }
 
   @media (max-width: $mobile-width) {
     width: 100%;
+    margin-top: 0;
   }
 
   h2 {
@@ -82,18 +84,14 @@
   position: absolute;
   top: -20px;
   left: 0;
+
+  @media (max-width: $mobile-width) {
+    top: -11px;
+  }
 }
 
 .about__box {
   margin-top: 50px;
-
-  // @media (max-width: $tablet-width) {
-  //   width: 51%;
-  // }
-
-  // @media (max-width: $mobile-width) {
-  //   width: 100%;
-  // }
 }
 
 .about__history,
@@ -129,16 +127,19 @@
   margin-top: 50px;
 
   @media (max-width: $tablet-width) {
-    width: 50%;
-    margin-top: 47px;
+    width: 51%;
+    margin-top: 43px;
+    padding-right: 93px;
   }
 
   @media (max-width: $mobile-width) {
     width: 100%;
+    padding-right: 0;
+    margin-top: 49px;
   }
 
   p {
-    margin-top: 17px;
+    margin-top: 23px;
 
     @media (max-width: $mobile-width) {
       margin-top: 21px;
@@ -148,15 +149,16 @@
 
 .about__target {
   margin-top: 50px;
+  z-index: 1;
 
   p {
     margin-top: 17px;
   }
 
   @media (max-width: $tablet-width) {
-    margin-top: 95px;
-    padding-left: 53px;
-    padding-right: 53px;
+    margin-top: 76px;
+    padding-left: 90px;
+    padding-right: 120px;
   }
 
   @media (max-width: $mobile-width) {
