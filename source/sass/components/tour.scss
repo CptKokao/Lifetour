@@ -219,16 +219,29 @@
 
 .tour__link {
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: center;
   margin-top: 43px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 20px;
 
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
+  &:hover {
+    @include btn-text;
+  }
 
-  color: #2d383f;
+  a {
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #2d383f;
+
+    &::after {
+      content: "\003E";
+      top: 0;
+      right: 0;
+    }
+  }
 
   @media (max-width: $tablet-width) {
     text-align: start;

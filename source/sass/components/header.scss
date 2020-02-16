@@ -70,7 +70,8 @@
 
     // mobile@2x
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: #1570c5 url("../img/header-bg-mobile@2x.webp") center no-repeat;
+      background: #1570c5 url("../img/header-bg-mobile@2x.webp") center
+        no-repeat;
       background-size: cover;
     }
   }
@@ -144,6 +145,10 @@
   a {
     color: #ffffff;
     letter-spacing: 1.5px;
+
+    &:hover {
+      @include btn-text;
+    }
   }
 }
 
@@ -154,6 +159,10 @@
   color: #ffffff;
   font-weight: bold;
   font-size: 19px;
+
+  &:hover {
+    @include btn-text;
+  }
 
   @media (max-width: $tablet-width) {
     order: 2;
@@ -242,6 +251,10 @@
 
 .header__btn {
   margin-top: 40px;
+
+  &:hover {
+    @include btn-hover;
+  }
 
   @media (max-width: $tablet-width) {
     margin-top: 28px;

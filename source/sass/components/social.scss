@@ -12,8 +12,11 @@
   li {
     width: 21.3px;
     height: 21.3px;
-
     background: rgba(2, 102, 193, 0.5);
+
+    &:hover {
+      @include btn-link;
+    }
   }
 
   a {

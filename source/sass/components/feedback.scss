@@ -105,6 +105,10 @@
     border: none;
     letter-spacing: 1px;
 
+    &:hover {
+      @include btn-hover;
+    }
+
     @media (max-width: $tablet-width) {
       width: 268px;
       height: 50px;

@@ -6,6 +6,10 @@
   height: 35px;
   background-color: $blue;
 
+  &:hover {
+    @include btn-link;
+  }
+
   &::after {
     content: "";
     width: 14px;
@@ -49,12 +53,3 @@
     right: 60px;
   }
 }
-
-// .swiper-slide {
-//   opacity: 0.2;
-// }
-
-// .swiper-slide-next,
-// .swiper-slide-active {
-//   opacity: 1;
-// }
