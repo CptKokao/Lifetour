@@ -10,13 +10,7 @@ if (!String.prototype.startsWith) {
   });
 }
 
-$(document).ready(function() {
-  $(".hamburger").click(function() {
-    $(this).toggleClass("is-active");
-  });
-});
-
-// Swiper
+// Tour swiper
 var swiper = new Swiper(".tour__swiper-container", {
   loop: true,
   navigation: {
@@ -37,9 +31,10 @@ var swiper = new Swiper(".tour__swiper-container", {
   }
 });
 
-// Swiper
+// Training swiper
 var swiper = new Swiper(".training__swiper-container", {
-  slidesPerView: 'auto',
+  width: 1196,
+  slidesPerView: 5,
   spaceBetween: 5,
   loop: true,
   navigation: {
@@ -48,7 +43,7 @@ var swiper = new Swiper(".training__swiper-container", {
   },
 });
 
-// Swiper
+// Review swiper
 var swiper = new Swiper(".review__swiper-container", {
   slidesPerView: 'auto',
   spaceBetween: 15,
@@ -57,6 +52,18 @@ var swiper = new Swiper(".review__swiper-container", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
   },
+  breakpoints: {
+    // when window width is >= 768px
+    320: {
+      width: 600,
+      slidesPerView: 2,
+    },
+    767: {
+      width: 1196,
+      slidesPerView: 3,
+      spaceBetween: 20
+    }
+  }
 });
 
 // Swiper

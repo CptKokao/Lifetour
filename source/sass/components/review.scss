@@ -152,15 +152,3 @@
     top: 8%;
   }
 }
-
-.review__swiper-button-next {
-  @media (max-width: $tablet-width) {
-    right: 3px;
-  }
-}
-
-.review__swiper-button-prev {
-  @media (max-width: $tablet-width) {
-    right: 43px;
-  }
-}
