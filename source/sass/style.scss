@@ -1,9 +1,10 @@
 // Импорт глобальных файлов
-@import "global/normalize.scss";
 @import "global/variables.scss";
 @import "global/fonts.scss";
 @import "global/global.scss";
 @import "global/mixins.scss";
+@import "plugin/normalize.scss";
+@import "plugin/swiper.scss";
 
 // Импорт компонентов
 @import "components/hamburger.scss";
