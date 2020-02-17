@@ -1,6 +1,7 @@
-"use strict";
-// hamburger
+/* eslint-disable */
+'use strict';
 
+// polyfill swiper for IE11
 if (!String.prototype.startsWith) {
   Object.defineProperty(String.prototype, 'startsWith', {
       value: function(search, rawPos) {
@@ -11,11 +12,11 @@ if (!String.prototype.startsWith) {
 }
 
 // Tour swiper
-var swiper = new Swiper(".tour__swiper-container", {
+var swiper = new Swiper('.tour__swiper-container', {
   loop: true,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
   },
   breakpoints: {
     // when window width is >= 768px
@@ -32,25 +33,25 @@ var swiper = new Swiper(".tour__swiper-container", {
 });
 
 // Training swiper
-var swiper = new Swiper(".training__swiper-container", {
+var swiper = new Swiper('.training__swiper-container', {
   width: 1196,
   slidesPerView: 5,
   spaceBetween: 5,
   loop: true,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
   },
 });
 
 // Review swiper
-var swiper = new Swiper(".review__swiper-container", {
+var swiper = new Swiper('.review__swiper-container', {
   slidesPerView: 'auto',
   spaceBetween: 15,
   loop: true,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
   },
   breakpoints: {
     // when window width is >= 768px
@@ -67,12 +68,12 @@ var swiper = new Swiper(".review__swiper-container", {
 });
 
 // Swiper
-var swiper = new Swiper(".gallery__swiper-container", {
+var swiper = new Swiper('.gallery__swiper-container', {
   slidesPerView: 'auto',
   spaceBetween: 5,
   loop: true,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
   },
 });

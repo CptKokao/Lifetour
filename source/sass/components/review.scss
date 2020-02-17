@@ -38,6 +38,13 @@
   @media (max-width: $mobile-width) {
     padding-top: 93px;
   }
+
+  .swiper-slide-duplicate-prev,
+  .swiper-slide-next {
+    @media (max-width: $tablet-width) {
+      opacity: 0.22;
+    }
+  }
 }
 
 .review__swiper-slide {
@@ -102,7 +109,7 @@
     height: 50px;
     font-size: 66px;
     line-height: 102px;
-    color: #2D383F;
+    color: #2d383f;
     opacity: 0.05;
 
     @media (max-width: $mobile-width) {
@@ -125,7 +132,7 @@
       height: 50px;
       font-size: 66px;
       line-height: 102px;
-      color: #2D383F;
+      color: #2d383f;
       opacity: 0.05;
     }
   }

@@ -78,20 +78,33 @@
   @media (max-width: $mobile-width) {
     padding-top: 110px;
   }
+
+  .swiper-slide-next {
+    @media (max-width: $tablet-width) {
+      opacity: 1;
+    }
+  }
+
+  .swiper-slide-active {
+    @media (max-width: $tablet-width) {
+      opacity: 1;
+    }
+  }
 }
 
-.training_swiper-slide {
+.training__swiper-slide {
   width: 234px;
   min-height: 386px;
   padding: 15px 10px;
 
-  background: #FFFFFF;
-  border: 1px solid #FFFFFF;
+  background: #ffffff;
+  border: 1px solid #ffffff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 
   @media (max-width: $tablet-width) {
     padding-left: 15px;
     padding-right: 7px;
+    opacity: 0.2;
   }
 }
 
@@ -105,7 +118,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 19px;
-  color: #000;
+  color: #000000;
   letter-spacing: 1px;
 
   @media (max-width: $mobile-width) {
@@ -129,7 +142,7 @@
   justify-content: center;
   width: 24px;
   height: 24px;
-  border: 1px solid #9AC2E6;
+  border: 1px solid #9ac2e6;
 
   &:hover {
     @include btn-link;
