@@ -1,6 +1,12 @@
 .footer {
   min-height: 225px;
   padding-top: 40px;
+  background: none;
+
+  // desktop@2x
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: none;
+  }
 
   @media (max-width: $tablet-width) {
     padding-top: 0;

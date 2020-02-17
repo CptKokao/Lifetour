@@ -43,39 +43,39 @@
 }
 
 /* если поддерживается webp */
-.webp .header {
-  background: #1570c5 url("../img/header-bg.webp") center no-repeat;
+// .webp .header {
+//   background: #1570c5 url("../img/header-bg.webp") center no-repeat;
 
-  // desktop@2x
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: #1570c5 url("../img/header-bg.webp") center no-repeat;
-  }
+//   // desktop@2x
+//   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+//     background: #1570c5 url("../img/header-bg.webp") center no-repeat;
+//   }
 
-  // tablet
-  @media (max-width: $tablet-width) {
-    background: #1570c5 url("../img/header-bg-tablet.webp") right no-repeat;
-    background-size: cover;
+//   // tablet
+//   @media (max-width: $tablet-width) {
+//     background: #1570c5 url("../img/header-bg-tablet.webp") right no-repeat;
+//     background-size: cover;
 
-    // tablet@2x
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: #1570c5 url("../img/header-bg-tablet@2x.webp") right no-repeat;
-      background-size: cover;
-    }
-  }
+//     // tablet@2x
+//     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+//       background: #1570c5 url("../img/header-bg-tablet@2x.webp") right no-repeat;
+//       background-size: cover;
+//     }
+//   }
 
-  // mobile
-  @media (max-width: $mobile-width) {
-    background: #1570c5 url("../img/header-bg-mobile.webp") center no-repeat;
-    background-size: cover;
+//   // mobile
+//   @media (max-width: $mobile-width) {
+//     background: #1570c5 url("../img/header-bg-mobile.webp") center no-repeat;
+//     background-size: cover;
 
-    // mobile@2x
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: #1570c5 url("../img/header-bg-mobile@2x.webp") center
-        no-repeat;
-      background-size: cover;
-    }
-  }
-}
+//     // mobile@2x
+//     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+//       background: #1570c5 url("../img/header-bg-mobile@2x.webp") center
+//         no-repeat;
+//       background-size: cover;
+//     }
+//   }
+// }
 
 .header__wrapper {
   width: 100%;
