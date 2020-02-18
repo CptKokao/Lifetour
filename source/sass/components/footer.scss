@@ -13,6 +13,16 @@
   }
 }
 
+// для формата webp
+.webp .footer {
+  background: none;
+
+  // desktop@2x
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: none;
+  }
+}
+
 .footer__wrapper {
   @media (max-width: $tablet-width) {
     flex-direction: column-reverse;

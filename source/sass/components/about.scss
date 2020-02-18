@@ -37,6 +37,17 @@
   }
 }
 
+// для формата webp
+.webp .about__bg {
+  background: url("../img/about-bg.webp") left center no-repeat;
+  background-size: contain;
+
+  @media (max-width: $tablet-width) {
+
+    background: url("../img/about-bg-mobile.webp") left center no-repeat;
+  }
+}
+
 .about__wrapper {
   width: 50%;
   display: flex;

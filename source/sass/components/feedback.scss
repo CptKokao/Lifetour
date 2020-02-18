@@ -4,12 +4,12 @@
   align-items: center;
   height: 770px;
   padding-top: 316px;
-  background: #d7e1eb url("../img/footer-bg.jpg") center top no-repeat;
+  background: #d7e1eb url("../img/feedback-bg.jpg") center top no-repeat;
   background-size: cover;
 
   // desktop@2x
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: #d7e1eb url("../img/footer-bg.jpg") center top no-repeat;
+    background: #d7e1eb url("../img/feedback-bg.jpg") center top no-repeat;
     background-size: cover;
   }
 
@@ -18,15 +18,40 @@
   }
 
   @media (max-width: $mobile-width) {
-    background: #d7e1eb url("../img/footer-bg-mobile.jpg") center top no-repeat;
+    background: #d7e1eb url("../img/feedback-bg-mobile.jpg") center top
+      no-repeat;
     background-size: cover;
     height: 640px;
     padding-top: 192px;
 
     // mobile@2x
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: #d7e1eb url("../img/footer-bg.jpg") center top no-repeat;
+      background: #d7e1eb url("../img/feedback-bg.jpg") center top no-repeat;
       background-size: cover;
+    }
+  }
+
+  // для формата webp
+  .webp .feedback {
+    background: #d7e1eb url("../img/feedback-bg.webp") center top no-repeat;
+    background-size: cover;
+
+    // desktop@2x
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: #d7e1eb url("../img/feedback-bg.webp") center top no-repeat;
+      background-size: cover;
+    }
+
+    @media (max-width: $mobile-width) {
+      background: #d7e1eb url("../img/feedback-bg-mobile.webp") center top
+        no-repeat;
+      background-size: cover;
+
+      // mobile@2x
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: #d7e1eb url("../img/feedback-bg.webp") center top no-repeat;
+        background-size: cover;
+      }
     }
   }
 
