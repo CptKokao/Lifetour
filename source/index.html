@@ -683,8 +683,11 @@
         <h2>Остались вопросы?</h2>
         <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
         <form class="feedback__form" action="#">
-          <input type="text" placeholder="Как к вам обращаться?" required>
-          <input type="text" placeholder="Телефон" required>
+          <label class="visually-hidden" for="name">Имя</label>
+           <input type="text" name="name" id="name" placeholder="Как к вам обращаться?" required>
+
+          <label class="visually-hidden" for="phone">Телефон</label>
+          <input type="tel" name="phone" id="phone" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}"" placeholder="Телефон" required>
           <button class="btn">Отправить</button>
         </form>
       </div>
