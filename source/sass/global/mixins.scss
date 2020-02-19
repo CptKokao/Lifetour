@@ -33,6 +33,12 @@
   }
 }
 
+@mixin hover {
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
 @mixin btn-hover {
   background: #ffffff;
   color: #000000;
