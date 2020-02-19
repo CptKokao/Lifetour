@@ -53,7 +53,7 @@
     width: 50%;
     font-size: 14px;
     line-height: 24px;
-    min-height: 123px;
+    min-height: 133px;
 
     &:nth-child(2) {
       padding-left: 34px;
@@ -83,6 +83,7 @@
 
     &:last-of-type {
       padding-left: 0;
+      margin-bottom: 15px;
     }
   }
 
@@ -115,7 +116,7 @@
     align-items: flex-end;
 
     div {
-      padding-bottom: 25px;
+      padding-bottom: 45px;
     }
   }
 
