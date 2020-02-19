@@ -81,3 +81,12 @@ var swiper = new Swiper('.gallery__swiper-container', {
     prevEl: '.swiper-button-prev'
   },
 });
+
+var phone = document.querySelector('#phone');
+
+/*  Маска формы телефона */
+var maskOptions = {
+  mask: '+{7}(000)000-00-00'
+};
+
+IMask(phone, maskOptions);

@@ -284,10 +284,12 @@
         <p class="training__title-shadow">Обучение</p>
         <h2>Обучение</h2>
         <p class="training__decs">Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
-        <h3>Наши инструкторы</h3>
+        
 
         <!-- Swiper -->
         <div class="training__swiper-container swiper-container">
+
+          <h3 class="training__title">Наши инструкторы</h3>
           <!-- Swiper-wrapper -->
           <div class="swiper-wrapper">
             <!-- Slide -->
@@ -415,52 +417,44 @@
     </section>
 
       <!-- Процесс обучения -->
-    <div class="container">
-      <section class="process">
-        <h2>Процесс обучения</h2>
-        <ul class="process__list">
-          <li class="process__item">
-            <div class="process__item-img">
-              <svg width="25" height="25">
-                <use xlink:href="#icon-map"/>
-              </svg>
-            </div>
-            <p>Изучение спортивного туристского движения</p>
-          </li>
-          <li class="process__item">
-            <div class="process__item-img">
-              <svg width="25" height="25">
-                <use xlink:href="#icon-boot"/>
-              </svg>
-            </div>
-            <p>Подготовка и техническое снаряжение в походах</p>
-          </li>
-          <li class="process__item process__item--end process__item--order">
-            <div class="process__item-img">
-              <svg width="25" height="25">
-                <use xlink:href="#icon-tree"/>
-              </svg>
-            </div>
-            <p>Лекции по экологии, окружающей среде и гигиене</p>
-          </li>
-          <li class="process__item process__item--end">
-            <div class="process__item-img">
-              <svg width="25" height="25">
-                <use xlink:href="#icon-mountain"/>
-              </svg>
-            </div>
-            <p>Разъяснение характера горных препядствий и их сложности</p>
-          </li>
-        </ul>
-      </section>
-    </div>
-
-    <!-- progress  -->
     <div class="container-fluid">
       <div class="progress">
         <div class="progress__line"></div>
       </div>
+
+      <div class="container">
+        <section class="process">
+          <h2>Процесс обучения</h2>
+          <ul class="process__list">
+            <li class="process__item">
+              <div class="process__item-img">
+                <img src="img/map.svg" width="25" height="25" alt="Карта">
+              </div>
+              <p>Изучение спортивного туристского движения</p>
+            </li>
+            <li class="process__item">
+              <div class="process__item-img">
+                <img src="img/boot.svg" width="24" height="24" alt="Cнаряжение">
+              </div>
+              <p>Подготовка и техническое снаряжение в походах</p>
+            </li>
+            <li class="process__item process__item--end process__item--order">
+              <div class="process__item-img">
+                <img src="img/tree.svg" width="23" height="23" alt="Экология">
+              </div>
+              <p>Лекции по экологии, окружающей среде и гигиене</p>
+            </li>
+            <li class="process__item process__item--end">
+              <div class="process__item-img">
+                <img src="img/mountain.svg" width="25" height="25" alt="Горы">
+              </div>
+              <p>Разъяснение характера горных препядствий и их сложности</p>
+            </li>
+          </ul>
+        </section>
+      </div>
     </div>
+
 
     <!-- О нас -->
     <div class="container-fluid about">
@@ -687,7 +681,7 @@
            <input type="text" name="name" id="name" placeholder="Как к вам обращаться?" required>
 
           <label class="visually-hidden" for="phone">Телефон</label>
-          <input type="tel" name="phone" id="phone" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}"" placeholder="Телефон" required>
+          <input type="tel" name="phone" id="phone" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Телефон" required>
           <button class="btn">Отправить</button>
         </form>
       </div>
