@@ -31,12 +31,12 @@
     min-height: 470px;
     padding-top: 5px;
 
-    background: #1570c5 url("../img/header-bg-mobile.jpg") center no-repeat;
+    background: #1570c5 url("../img/header-bg-mobile.jpg") right no-repeat;
     background-size: cover;
 
     // mobile@2x
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: #1570c5 url("../img/header-bg-mobile@2x.jpg") center no-repeat;
+      background: #1570c5 url("../img/header-bg-mobile@2x.jpg") right no-repeat;
       background-size: cover;
     }
   }
@@ -80,7 +80,6 @@
 .header__wrapper {
   width: 100%;
   display: flex;
-  align-items: baseline;
   justify-content: flex-start;
   position: relative;
 
@@ -116,7 +115,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-top: 6px;
+    margin-top: 3px;
   }
 }
 
@@ -154,11 +153,12 @@
 
 .header__tel {
   flex-shrink: 0;
-  margin-left: 7%;
+  margin-left: 8%;
 
   color: #ffffff;
   font-weight: bold;
   font-size: 19px;
+  padding-top: 15px;
 
   &:hover {
     @include btn-text;
@@ -168,6 +168,7 @@
     order: 2;
     font-size: 16px;
     margin-left: 12%;
+    padding-top: 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -200,7 +201,7 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
-    margin-top: 85px;
+    margin-top: 90px;
     font-size: 27px;
     line-height: 33px;
   }

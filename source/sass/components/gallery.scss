@@ -67,6 +67,10 @@
   @media (max-width: $tablet-width) {
     padding-top: 270px;
   }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 275px;
+  }
 }
 
 .gallery__swiper-slide {
