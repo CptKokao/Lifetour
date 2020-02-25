@@ -17,8 +17,8 @@
 
 .training__title {
   position: absolute;
-  top: 55px;
-  left: 0;
+  top: 58px;
+  left: 3px;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -27,12 +27,14 @@
 
   @media (max-width: $tablet-width) {
     top: 60px;
+    left: 4px;
     font-size: 18px;
     line-height: 22px;
   }
 
   @media (max-width: $mobile-width) {
     top: 52px;
+    left: 0;
     font-size: 16px;
     line-height: 20px;
   }
@@ -52,9 +54,13 @@
 
 .training__decs {
   width: 73%;
-  margin-top: 30px;
+  margin-top: 26px;
   line-height: 26px;
   letter-spacing: 1.4px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 29px;
+  }
 
   @media (max-width: $mobile-width) {
     margin-top: 20px;
@@ -72,7 +78,7 @@
   padding-right: 3px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 125px;
+    padding-top: 126px;
   }
 
   @media (max-width: $mobile-width) {
@@ -95,13 +101,17 @@
 .training__swiper-slide {
   width: 234px;
   min-height: 386px;
-  padding: 15px 10px;
+  padding-top: 15px;
+  padding-right: 7px;
+  padding-bottom: 15px;
+  padding-left: 15px;
 
   background: #ffffff;
   border: 1px solid #ffffff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 
   @media (max-width: $tablet-width) {
+    padding-top: 10px;
     padding-left: 15px;
     padding-right: 6px;
     opacity: 0.2;
@@ -109,6 +119,7 @@
 
   @media (max-width: $mobile-width) {
     padding-left: 13px;
+    padding-right: 9px;
   }
 }
 
@@ -118,7 +129,7 @@
 
 .training__coach {
   width: 87px;
-  margin-top: 24px;
+  margin-top: 25px;
   font-weight: 700;
   font-size: 14px;
   line-height: 19px;
@@ -126,17 +137,17 @@
   letter-spacing: 1px;
 
   @media (max-width: $mobile-width) {
-    margin-top: 19px;
+    margin-top: 24px;
   }
 }
 
 .training__coach-about {
-  margin-top: 7px;
+  margin-top: 10px;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 1px;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     margin-top: 10px;
   }
 }
@@ -159,7 +170,7 @@
 
 .training__swiper-button-next,
 .training__swiper-button-prev {
-  top: 13%;
+  top: 14%;
 
   @media (max-width: $tablet-width) {
     top: 16%;

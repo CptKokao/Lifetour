@@ -1,6 +1,6 @@
 .footer {
   min-height: 225px;
-  padding-top: 40px;
+  padding-top: 33px;
   background: none;
 
   // desktop@2x
@@ -41,7 +41,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    top: 36px;
+    top: 34px;
     right: 50%;
     left: 50%;
   }
@@ -175,7 +175,7 @@
 
 .footer__social-list {
   min-width: 130px;
-  margin-top: 0;
+  margin-top: 5px;
 
   @media (max-width: $tablet-width) {
     min-width: 115px;

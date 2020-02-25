@@ -4,11 +4,13 @@
   padding-top: 52px;
   color: #ffffff;
 
-  background: #1570c5 url("../img/header-bg.jpg") center no-repeat;
+  background: #1570c5 url("../img/header-bg.jpg") center bottom no-repeat;
+  background-size: cover;
 
   // desktop@2x
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: #1570c5 url("../img/header-bg.jpg") center no-repeat;
+    background: #1570c5 url("../img/header-bg@2x.jpg") center bottom no-repeat;
+    background-size: cover;
   }
 
   // tablet
@@ -16,12 +18,12 @@
     min-height: 628px;
     padding-top: 22px;
 
-    background: #1570c5 url("../img/header-bg-tablet.jpg") right no-repeat;
+    background: #1570c5 url("../img/header-tablet-bg.jpg") right bottom no-repeat;
     background-size: cover;
 
     // tablet@2x
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: #1570c5 url("../img/header-bg-tablet@2x.jpg") right no-repeat;
+      background: #1570c5 url("../img/header-tablet-bg@2x.jpg") right bottom no-repeat;
       background-size: cover;
     }
   }
@@ -30,48 +32,28 @@
   @media (max-width: $mobile-width) {
     min-height: 470px;
     padding-top: 5px;
-
-    background: #1570c5 url("../img/header-bg-mobile.jpg") right no-repeat;
-    background-size: cover;
-
-    // mobile@2x
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: #1570c5 url("../img/header-bg-mobile@2x.jpg") right no-repeat;
-      background-size: cover;
-    }
   }
 }
 
 /* если поддерживается webp */
 .webp .header {
-  background: #1570c5 url("../img/header-bg.webp") center no-repeat;
+  background: #1570c5 url("../img/header-bg.webp") center bottom no-repeat;
+  background-size: cover;
 
   // desktop@2x
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: #1570c5 url("../img/header-bg.webp") center no-repeat;
+    background: #1570c5 url("../img/header-bg@2x.webp") center bottom no-repeat;
+    background-size: cover;
   }
 
   // tablet
   @media (max-width: $tablet-width) {
-    background: #1570c5 url("../img/header-bg-tablet.webp") right no-repeat;
+    background: #1570c5 url("../img/header-tablet-bg.webp") right bottom no-repeat;
     background-size: cover;
 
     // tablet@2x
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: #1570c5 url("../img/header-bg-tablet@2x.webp") right no-repeat;
-      background-size: cover;
-    }
-  }
-
-  // mobile
-  @media (max-width: $mobile-width) {
-    background: #1570c5 url("../img/header-bg-mobile.webp") center no-repeat;
-    background-size: cover;
-
-    // mobile@2x
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: #1570c5 url("../img/header-bg-mobile@2x.webp") center
-        no-repeat;
+      background: #1570c5 url("../img/header-tablet-bg@2x.webp") right bottom no-repeat;
       background-size: cover;
     }
   }
@@ -86,7 +68,7 @@
   @media (max-width: $tablet-width) {
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 21px;
+    padding-top: 19px;
   }
 }
 
@@ -168,10 +150,11 @@
     order: 2;
     font-size: 16px;
     margin-left: 12%;
-    padding-top: 0;
+    padding-top: 5px;
   }
 
   @media (max-width: $mobile-width) {
+    padding-top: 0;
     position: absolute;
     top: 45px;
     right: 0;
@@ -238,6 +221,7 @@
 
   @media (max-width: $tablet-width) {
     max-width: 400px;
+    margin-top: 13px;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 1.2px;

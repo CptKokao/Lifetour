@@ -52,7 +52,7 @@
   min-height: 504px;
   padding-top: 55px;
   padding-bottom: 45px;
-  padding-left: 35px;
+  padding-left: 32px;
   padding-right: 10px;
   margin-bottom: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -62,7 +62,7 @@
   line-height: 23px;
 
   @media (max-width: $tablet-width) {
-    padding: 50px 10px 45px 35px;
+    padding: 53px 10px 45px 35px;
   }
 
   @media (max-width: $mobile-width) {
@@ -75,10 +75,10 @@
 .review__swiper-header {
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 45px;
+    margin-bottom: 41px;
   }
 
   @media (max-width: $mobile-width) {
